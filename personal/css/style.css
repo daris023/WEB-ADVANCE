@@ -1,0 +1,55 @@
+/* style.css */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* Light blue-gray background */
+    color: #334155; /* Darker text for contrast */
+    line-height: 1.6;
+}
+
+/* Custom scroll-behavior for smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Styling for Lucide icons */
+.icon-small {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+.icon-medium {
+    width: 32px;
+    height: 32px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+.icon-large {
+    width: 48px;
+    height: 48px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+/* Base utility for hiding elements on small screens and showing on medium+ */
+.hidden-mobile {
+    display: none;
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+    .hidden-mobile {
+        display: block;
+    }
+}
